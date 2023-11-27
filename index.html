@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ticket </title>
+</head>
+
+<body>
+  <main>
+    <div class="ticket">
+      <div class="ticket-header">
+        <div class="ticket-header__start">
+          <a class="back-button">
+            <img src="./images/icons/arrow-right.svg" alt="">
+          </a>
+          <h2>تذكرة رقم #2342</h2>
+        </div>
+        <div class="ticket-header__end">
+          <button>
+            <img src="./images/icons/edit.svg" alt="">
+            تعديل
+          </button>
+        </div>
+      </div>
+      <div class="ticket-details">
+        <div class="ticket-chart">
+          <div id="chartdiv"></div>
+        </div>
+        <div class="ticket-discount">
+          <div class="ticket-discount__content">
+            <p>
+              <span>عرض التذكرة الخاصة بالفيلم</span>
+              <img src="./images/icons/trash.svg" alt="">
+            </p>
+            <div class="ticket-link">
+              <button>
+                <img src="./images/icons/copy.svg" alt="">
+              </button>
+              <span>www.tazkty.com/473847</span>
+            </div>
+            <p class="ticket-date">
+              فعال حتي 15 يوليو 2023
+            </p>
+          </div>
+          <div class="dash-line"></div>
+          <div class="ticket-discount__share">
+            <div class="share-content">
+              <div class="share-content__text">
+                <p class="title">خصم</p>
+                <p class="percent">25% </p>
+              </div>
+              <div class="share-content__buttons">
+                <button class="share-button">
+                  <img src="./images/icons/send-2.svg" alt="">
+                  مشاركة
+                </button>
+              </div>
+            </div>
+            <div class="share-qr_code">
+              <img src="./images/qr_img 1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-users">
+        <div class="ticket-search">
+          <div class="search-start">
+            <h3>مبيعات التذاكر</h3>
+            <div class="search-field-group">
+              <input type="text" name="search" placeholder="بحث عن ..." class="search-input">
+              <div class="icon">
+                <img src="./images/icons/search-normal.svg" alt="">
+              </div>
+            </div>
+            <div class="search-buttons">
+              <button>
+                <img src="./images/icons/setting-4.svg" alt="">
+              </button>
+              <button>
+                <img src="./images/icons/arrow-3.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="search-end">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>مفعلة</span>
+            <button>حجز تذكرة جديدة</button>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-table">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>المستخدم</th>
+              <th>رقم التذكرة</th>
+              <th>قيمى التذكرة</th>
+              <th>السينمات</th>
+              <th>عدد الأشخاص</th>
+              <th>عدد مرات الشراء</th>
+              <th>التذكرة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="user-card">
+                  <div class="user-avatar">
+                    <img src="./images/users/Image-30.png" alt="">
+                  </div>
+                  <div class="user-data">
+                    <h3>احمد محمود</h3>
+                    <span>0123456789</span>
+                  </div>
+                </div>
+              </td>
+              <td>C-101</td>
+              <td>12</td>
+              <td>
+                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+              </td>
+              <td>1</td>
+              <td>مرة واحدة</td>
+              <td>تذكرة رقم 45.pdf</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div class="user-card">
+                  <div class="user-avatar">
+                    <img src="./images/users/Image-30.png" alt="">
+                  </div>
+                  <div class="user-data">
+                    <h3>احمد محمود</h3>
+                    <span>0123456789</span>
+                  </div>
+                </div>
+              </td>
+              <td>C-102</td>
+              <td>124</td>
+              <td>
+                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+              </td>
+              <td>1</td>
+              <td>مرة واحدة </td>
+              <td>تذكرة رقم 45.pdf</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <div class="user-card">
+                  <div class="user-avatar">
+                    <img src="./images/users/Image-30.png" alt="">
+                  </div>
+                  <div class="user-data">
+                    <h3>احمد محمود</h3>
+                    <span>0123456789</span>
+                  </div>
+                </div>
+              </td>
+              <td>C-102</td>
+              <td>3</td>
+              <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة</td>
+              <td>مرة واحدة </td>
+              <td>مرة واحدة</td>
+              <td>تذكرة رقم 45.pdf</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <div class="user-card">
+                  <div class="user-avatar">
+                    <img src="./images/users/Image-30.png" alt="">
+                  </div>
+                  <div class="user-data">
+                    <h3>احمد محمود</h3>
+                    <span>0123456789</span>
+                  </div>
+                </div>
+              </td>
+              <td>C-103</td>
+              <td>52 </td>
+              <td>
+                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+              </td>
+              <td>2</td>
+              <td>مرة واحدة</td>
+              <td>تذكرة رقم 45.pdf</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Resources for chart -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

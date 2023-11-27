@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Neo Sans Arabic', 'Inter';
+  direction: rtl;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F3F5F7;
+  color: #1C1C28;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>div>* {
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-header__start {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ticket-header__start .back-button {
+  height: 32px;
+  width: 32px;
+  background-color: #E7EAED;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.ticket-header__start .back-button img {
+  height: 13px;
+}
+
+.ticket-header__start h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+
+.ticket-header__end button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #E9EAEA;
+  background-color: #F9F9F9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* end ticket header */
+
+.ticket-details {
+  display: flex;
+  gap: 25px;
+}
+
+.ticket-details .ticket-chart {
+  width: 840px;
+  height: 265px;
+  background-color: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+}
+
+#chartdiv {
+  width: 90%;
+  height: 100%;
+}
+
+.ticket-details .ticket-discount {
+  background-color: #8A74F9;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 408px;
+  position: relative;
+}
+
+.ticket-discount__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.ticket-discount__content p {
+  font-size: 16px;
+  font-weight: 500;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-discount__content p.ticket-date {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ticket-discount__content p img {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.dash-line {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.4);
+  margin: 16px 0;
+  width: 100%;
+  position: relative;
+}
+
+.dash-line::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  height: 27px;
+  width: 12px;
+  left: 0;
+  top: -12px;
+  border-radius: 0 12px 12px 0;
+  background-color: #F3F5F7;
+}
+
+.dash-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  height: 27px;
+  width: 12px;
+  top: -12px;
+  border-radius: 12px 0 0 12px;
+  background-color: #F3F5F7;
+}
+
+
+.ticket-link {
+  font-family: Inter;
+  background-color: #fff;
+  color: #000;
+  height: 42px;
+  width: 226px;
+  border-radius: 8px;
+  border: 1px dashed #ddd;
+  margin-top: 20px;
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+  direction: ltr;
+}
+
+.ticket-link span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ticket-discount__share {
+  padding: 0 27px 18px 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-discount__share .share-content {
+  display: flex;
+  align-items: end;
+  gap: 17px;
+}
+
+.share-content__text {
+  display: grid;
+  gap: 13px;
+}
+
+.share-content__text p.title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.share-content__text p.percent {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.share-content__buttons .share-button {
+  font-size: 12px;
+  color: #fff;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  background-color: inherit;
+  border: 1px solid #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.ticket-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.search-start {
+  display: flex;
+  gap: 20px;
+}
+
+.search-start h3 {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.search-field-group {
+  width: 277px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;
+  outline: 0;
+  border: 1px solid rgba(146, 161, 173, 0.4);
+  border-radius: 6px;
+  padding: 10px;
+  padding-right: 30px;
+  background-color: #fff;
+  font-size: 10px;
+}
+
+.search-input::placeholder {
+  color: #92A1AD66;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-buttons button {
+  background-color: #fff;
+  border: 1px solid rgba(146, 161, 173, 0.4);
+  border-radius: 6px;
+  height: 36px;
+  width: 36px;
+}
+
+.search-end {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-end span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9C9D9F;
+}
+
+.search-end button {
+  font-size: 12px;
+  font-weight: 400;
+  height: 36px;
+  padding: 13px 10px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #8A74F9;
+  color: #fff;
+}
+
+
+.ticket-table {
+  background-color: #fff;
+  border: 1px solid #F3F3F5;
+  border-radius: 8px;
+}
+
+.ticket-table table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ticket-table table tr {
+  border-bottom: 1px solid #F3F3F5;
+}
+
+.ticket-table table th:first-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.ticket-table table th:last-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.ticket-table table th {
+  color: #ABAAB1;
+  background-color: #E3E4E9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  height: 41px;
+}
+
+.ticket-table .user-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  text-align: start;
+}
+
+.user-card .user-data h3 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.user-card .user-data span {
+  font-size: 10px;
+  color: #92A1AD;
+}

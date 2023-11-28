@@ -28,13 +28,28 @@
       </div>
       <div class="ticket-details">
         <div class="ticket-chart">
+          <div class="chart-heading">
+            <div class="chart-heading__start">
+              <h3>إحصائيات إستخدام القسيمة</h3>
+              <p>05 يوليو , 2023 - 05 أغسطس , 2023</p>
+            </div>
+            <div class="chart-heading__end">
+              <select>
+                <option value="">سنويا</option>
+                <option value="2">شهريا</option>
+                <option value="2">يومي</option>
+              </select>
+            </div>
+          </div>
           <div id="chartdiv"></div>
         </div>
         <div class="ticket-discount">
           <div class="ticket-discount__content">
             <p>
               <span>عرض التذكرة الخاصة بالفيلم</span>
-              <img src="./images/icons/trash.svg" alt="">
+              <button data-title="حذف">
+                <img src="./images/icons/trash.svg" alt="">
+              </button>
             </p>
             <div class="ticket-link">
               <button>
@@ -125,7 +140,7 @@
               </td>
               <td>C-101</td>
               <td>12</td>
-              <td>
+              <td data-title="سرايا القبة">
                 سينما مصر , مول العرب , برج الأطنان , سرايا القبة
               </td>
               <td>1</td>
@@ -258,6 +273,47 @@
             </tr>
           </tbody>
         </table>
+        <div class="pagination">
+          <div class="pagination-right">
+            <span>عرض </span>
+            <div class="select">
+              <select>
+                <option value="22">22</option>
+                <option value="2">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+            <span>من اصل 250</span>
+          </div>
+          <div class="pagination-container">
+            <div class="pagination-tab">
+              <img src="./images/icons/bulk_left.svg" alt="">
+            </div>
+            <div class="pagination-tab active">
+              1
+            </div>
+            <div class="pagination-tab">
+              2
+            </div>
+            <div class="pagination-tab">
+              3
+            </div>
+            <div class="pagination-tab">
+              4
+            </div>
+            <div class="pagination-tab">
+              5
+            </div>
+            <div class="pagination-tab">
+              <img src="./images/icons/bulk_right.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

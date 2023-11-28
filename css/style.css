@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Kumbh+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 * {
   margin: 0;
@@ -7,6 +8,7 @@
   border: none;
   outline: none;
   font-family: 'Neo Sans Arabic', 'Inter';
+  font-weight: 400;
   direction: rtl;
 }
 
@@ -43,7 +45,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #8A74F9;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -61,11 +63,11 @@ button {
 }
 
 input:checked+.slider {
-  background-color: #8A74F9;
+  background-color: #ccc;
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px #8A74F9;
+  box-shadow: 0 0 1px #ccc;
 }
 
 input:checked+.slider:before {
@@ -90,8 +92,7 @@ main {
 }
 
 main>div>* {
-  margin: 5px;
-  border: 1px solid black;
+  margin: 15px 0;
 }
 
 .ticket-header {
@@ -147,15 +148,46 @@ main>div>* {
 
 .ticket-details .ticket-chart {
   width: 840px;
-  height: 265px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 22px 8px 22px;
   border: 1px solid #EBEBEB;
+  border-radius: 8px;
+}
+
+.chart-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-heading__start h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.chart-heading__start p {
+  color: #99A1B7;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.chart-heading__end select {
+  height: 30px;
+  min-width: 67px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #FAFAFA;
+  border: 1px solid #E8E8E8;
   border-radius: 8px;
 }
 
 #chartdiv {
   width: 100%;
-  height: 100%;
 }
 
 .ticket-details .ticket-discount {
@@ -189,8 +221,9 @@ main>div>* {
   font-weight: 400;
 }
 
-.ticket-discount__content p img {
+.ticket-discount__content p button {
   position: absolute;
+  background: inherit;
   top: 25px;
   left: 20px;
 }
@@ -382,6 +415,7 @@ main>div>* {
   background-color: #fff;
   border: 1px solid #F3F3F5;
   border-radius: 8px;
+  padding: 7px 6px;
 }
 
 .ticket-table table {
@@ -394,6 +428,10 @@ main>div>* {
 
 .ticket-table table tr {
   border-bottom: 1px solid #F3F3F5;
+}
+
+.ticket-table table tr td:first-child {
+  color: #7E8299;
 }
 
 .ticket-table table th:first-child {
@@ -415,6 +453,7 @@ main>div>* {
 
 .ticket-table table tr>* {
   padding: 10px 0;
+  font-size: 13px;
 }
 
 .ticket-table .user-card {
@@ -428,11 +467,13 @@ main>div>* {
 .user-card .user-data h3 {
   font-size: 12px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .user-card .user-data span {
   font-size: 10px;
   color: #92A1AD;
+  line-height: 20px;
 }
 
 .ticket-data {
@@ -467,4 +508,68 @@ main>div>* {
   color: rgba(0, 0, 0, 0.40);
 
   ;
+}
+
+.pagination,
+.pagination-right,
+.pagination-container {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  justify-content: space-between;
+  padding: 10px 6px;
+}
+
+.pagination-right {
+  gap: 7px;
+}
+
+.pagination-right span {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.pagination-right select {
+  display: flex;
+  text-align: center;
+  min-width: 52px;
+  height: 32px;
+  direction: ltr;
+  gap: 6px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pagination-container {
+  gap: 12px;
+}
+
+.pagination-container .pagination-tab {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #7E8299;
+}
+
+.pagination-container .pagination-tab.active {
+  color: #fff;
+  background-color: #8A74F9;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: default;
+
 }

@@ -1,0 +1,30 @@
+@media (max-width:1104px) {
+  .ticket-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+  .ticket-search {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-start {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width:425px) {
+  .ticket {
+    width: 95%;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

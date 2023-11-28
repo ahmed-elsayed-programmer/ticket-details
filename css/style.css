@@ -7,7 +7,8 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  font-family: 'Neo Sans Arabic', 'Inter';
+  color: #1C1C28;
+  font-family: 'Neo-Sans', 'Inter';
   font-weight: 400;
   direction: rtl;
 }
@@ -95,6 +96,11 @@ main>div>* {
   margin: 15px 0;
 }
 
+.ticket {
+  width: calc(100% * 1275 / 1440);
+  max-width: 1275px;
+}
+
 .ticket-header {
   display: flex;
   justify-content: space-between;
@@ -122,7 +128,7 @@ main>div>* {
 
 .ticket-header__start h2 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 28px;
 }
 
@@ -148,11 +154,13 @@ main>div>* {
 
 .ticket-details .ticket-chart {
   width: 840px;
+  max-width: 100%;
+  height: 275px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 22px 8px 22px;
+  padding: 20px 22px 0 22px;
   border: 1px solid #EBEBEB;
   border-radius: 8px;
 }
@@ -170,8 +178,10 @@ main>div>* {
 
 .chart-heading__start p {
   color: #99A1B7;
+  font-family: 'Inter';
   font-size: 14px;
-  line-height: 13px;
+  font-weight: 500;
+  margin: 5px 0;
 }
 
 .chart-heading__end select {
@@ -191,13 +201,19 @@ main>div>* {
 }
 
 .ticket-details .ticket-discount {
+  background-image: url('/images/background.png');
   background-color: #8A74F9;
-  color: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   width: 408px;
+  max-width: 100%;
+  min-height: 265px;
   position: relative;
+}
+
+.ticket-discount * {
+  color: #fff;
 }
 
 .ticket-discount__content {
@@ -264,7 +280,6 @@ main>div>* {
 .ticket-link {
   font-family: Inter;
   background-color: #fff;
-  color: #000;
   height: 42px;
   width: 226px;
   border-radius: 8px;
@@ -279,13 +294,20 @@ main>div>* {
   direction: ltr;
 }
 
+.ticket-link .copy-button {
+  background-color: inherit;
+}
+
 .ticket-link span {
   font-size: 13px;
   font-weight: 500;
+  font-family: 'Inter';
+  color: #000;
+
 }
 
 .ticket-discount__share {
-  padding: 0 27px 18px 32px;
+  padding: 0 27px 0 32px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -309,7 +331,6 @@ main>div>* {
 
 .share-content__text p.percent {
   font-size: 18px;
-  font-weight: 500;
 }
 
 .share-content__buttons .share-button {
@@ -466,8 +487,6 @@ main>div>* {
 
 .user-card .user-data h3 {
   font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
 }
 
 .user-card .user-data span {
@@ -555,6 +574,7 @@ main>div>* {
   height: 27px;
   display: grid;
   place-items: center;
+  font-family: 'Inter';
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;

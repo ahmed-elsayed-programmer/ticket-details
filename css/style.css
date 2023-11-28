@@ -555,31 +555,79 @@ main>div>* {
   ;
 }
 
-td[data-title] {
+.tooltip {
   position: relative;
 }
 
-td[data-title]::before,
-td[data-title]::after {
-  --scale: 0;
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #1C1C28;
-  transform: translateY(-100%) scale(var(--scale));
-}
-
-td[data-title]::after {
-  color: #fff;
-  content: attr(data-title);
-  padding: 10px;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
   width: max-content;
+  background-color: #1E1B39;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
 
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+table .tooltip .tooltiptext {
+  top: -10px;
+  left: 0;
+}
+
+table .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.ticket-discount .tooltip .tooltiptext {
+  width: max-content;
+  bottom: -30px;
+  left: 20%;
+  margin-left: -20px;
+  /* Use half of the width (120/2 = 60), to center the tooltip */
+
+}
+
+.ticket-discount .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+
+}
 
 .pagination,
 .pagination-right,

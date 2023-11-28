@@ -1,31 +1,33 @@
 var options = {
-  series: [{
-    name: 'series1',
-    data: [31, 40, 28, 51, 42, 109, 100]
-  }],
+  series: [
+    {
+      name: ' استخدام ',
+      data: [11, 32, 45, 32, 34, 52, 41, 40, 28, 51, 42, 109],
+    },
+  ],
   chart: {
-    height: 200,
+    height: 205,
     type: 'area',
     toolbar: {
-      show: false
-    }
-  },
-  colors: ['#8A74F9'],
-  dataLabels: {
-    enabled: false
-  },
-  stroke: {
-    curve: 'smooth'
-  },
-  xaxis: {
-    type: 'datetime',
-    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-  },
-  tooltip: {
-    x: {
-      format: 'dd/MM/yy HH:mm'
+      show: false,
     },
   },
+  colors: ['#4f35a1', '#246dec'],
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: 'smooth',
+  },
+  labels: ['ديسمبر', 'نوفمبر', 'اكتوبر', 'سبتمبر', 'أغسطس', 'يوليو', 'يونيو', 'مايو', 'ابريل', 'مارس', 'فبراير', 'يناير'],
+  markers: {
+    size: 0,
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+
 };
 
 var chart = new ApexCharts(document.querySelector("#chartdiv"), options);

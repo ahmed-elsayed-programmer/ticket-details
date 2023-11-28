@@ -48,7 +48,7 @@
           <div class="ticket-discount__content">
             <p>
               <span>عرض التذكرة الخاصة بالفيلم</span>
-              <button data-title="حذف">
+              <button class="delete-button" data-title="حذف">
                 <img src="./images/icons/trash.svg" alt="">
               </button>
             </p>
@@ -112,168 +112,175 @@
         </div>
       </div>
       <div class="ticket-table">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>المستخدم</th>
-              <th>رقم التذكرة</th>
-              <th>قيمى التذكرة</th>
-              <th>السينمات</th>
-              <th>عدد الأشخاص</th>
-              <th>عدد مرات الشراء</th>
-              <th>التذكرة</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>
-                <div class="user-card">
-                  <div class="user-avatar">
-                    <img src="./images/users/Image-30.png" alt="">
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>المستخدم</th>
+                <th>رقم التذكرة</th>
+                <th>
+                  <div class="th-icon">
+                    قيمى التذكرة
+                    <img src="./images/icons/arrow.svg" alt="">
                   </div>
-                  <div class="user-data">
-                    <h3>احمد محمود</h3>
-                    <span>0123456789</span>
+                </th>
+                <th>السينمات</th>
+                <th>عدد الأشخاص</th>
+                <th>عدد مرات الشراء</th>
+                <th>التذكرة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="user-card">
+                    <div class="user-avatar">
+                      <img src="./images/users/Image-30.png" alt="">
+                    </div>
+                    <div class="user-data">
+                      <h3>احمد محمود</h3>
+                      <span>0123456789</span>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>C-101</td>
-              <td>12</td>
-              <td data-title="سرايا القبة">
-                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
-              </td>
-              <td>1</td>
-              <td>مرة واحدة</td>
-              <td>
-                <div class="ticket-data">
-                  <div class="ticket-icon">
-                    <img src="./images/icons/ticket-2.svg" alt="">
+                </td>
+                <td>C-101</td>
+                <td>12</td>
+                <td data-title="سرايا القبة">
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                </td>
+                <td>1</td>
+                <td>مرة واحدة</td>
+                <td>
+                  <div class="ticket-data">
+                    <div class="ticket-icon">
+                      <img src="./images/icons/ticket-2.svg" alt="">
+                    </div>
+                    <div class="ticket-data__text">
+                      <p>
+                        تذكرة رقم 45.pdf
+                      </p>
+                      <span>9mb . PDF</span>
+                    </div>
+                    <div class="download-icon">
+                      <img src="./images/icons/download.svg" alt="">
+                    </div>
                   </div>
-                  <div class="ticket-data__text">
-                    <p>
-                      تذكرة رقم 45.pdf
-                    </p>
-                    <span>9mb . PDF</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="user-card">
+                    <div class="user-avatar">
+                      <img src="./images/users/Image-30.png" alt="">
+                    </div>
+                    <div class="user-data">
+                      <h3>احمد محمود</h3>
+                      <span>0123456789</span>
+                    </div>
                   </div>
-                  <div class="download-icon">
-                    <img src="./images/icons/download.svg" alt="">
+                </td>
+                <td>C-102</td>
+                <td>124</td>
+                <td>
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                </td>
+                <td>1</td>
+                <td>مرة واحدة </td>
+                <td>
+                  <div class="ticket-data">
+                    <div class="ticket-icon">
+                      <img src="./images/icons/ticket-2.svg" alt="">
+                    </div>
+                    <div class="ticket-data__text">
+                      <p>
+                        تذكرة رقم 45.pdf
+                      </p>
+                      <span>9mb . PDF</span>
+                    </div>
+                    <div class="download-icon">
+                      <img src="./images/icons/download.svg" alt="">
+                    </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>
-                <div class="user-card">
-                  <div class="user-avatar">
-                    <img src="./images/users/Image-30.png" alt="">
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <div class="user-card">
+                    <div class="user-avatar">
+                      <img src="./images/users/Image-30.png" alt="">
+                    </div>
+                    <div class="user-data">
+                      <h3>احمد محمود</h3>
+                      <span>0123456789</span>
+                    </div>
                   </div>
-                  <div class="user-data">
-                    <h3>احمد محمود</h3>
-                    <span>0123456789</span>
+                </td>
+                <td>C-102</td>
+                <td>3</td>
+                <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة</td>
+                <td>مرة واحدة </td>
+                <td>مرة واحدة</td>
+                <td>
+                  <div class="ticket-data">
+                    <div class="ticket-icon">
+                      <img src="./images/icons/ticket-2.svg" alt="">
+                    </div>
+                    <div class="ticket-data__text">
+                      <p>
+                        تذكرة رقم 45.pdf
+                      </p>
+                      <span>9mb . PDF</span>
+                    </div>
+                    <div class="download-icon">
+                      <img src="./images/icons/download.svg" alt="">
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>C-102</td>
-              <td>124</td>
-              <td>
-                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
-              </td>
-              <td>1</td>
-              <td>مرة واحدة </td>
-              <td>
-                <div class="ticket-data">
-                  <div class="ticket-icon">
-                    <img src="./images/icons/ticket-2.svg" alt="">
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <div class="user-card">
+                    <div class="user-avatar">
+                      <img src="./images/users/Image-30.png" alt="">
+                    </div>
+                    <div class="user-data">
+                      <h3>احمد محمود</h3>
+                      <span>0123456789</span>
+                    </div>
                   </div>
-                  <div class="ticket-data__text">
-                    <p>
-                      تذكرة رقم 45.pdf
-                    </p>
-                    <span>9mb . PDF</span>
+                </td>
+                <td>C-103</td>
+                <td>52 </td>
+                <td>
+                  سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                </td>
+                <td>2</td>
+                <td>مرة واحدة</td>
+                <td>
+                  <div class="ticket-data">
+                    <div class="ticket-icon">
+                      <img src="./images/icons/ticket-2.svg" alt="">
+                    </div>
+                    <div class="ticket-data__text">
+                      <p>
+                        تذكرة رقم 45.pdf
+                      </p>
+                      <span>9mb . PDF</span>
+                    </div>
+                    <div class="download-icon">
+                      <img src="./images/icons/download.svg" alt="">
+                    </div>
                   </div>
-                  <div class="download-icon">
-                    <img src="./images/icons/download.svg" alt="">
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>
-                <div class="user-card">
-                  <div class="user-avatar">
-                    <img src="./images/users/Image-30.png" alt="">
-                  </div>
-                  <div class="user-data">
-                    <h3>احمد محمود</h3>
-                    <span>0123456789</span>
-                  </div>
-                </div>
-              </td>
-              <td>C-102</td>
-              <td>3</td>
-              <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة</td>
-              <td>مرة واحدة </td>
-              <td>مرة واحدة</td>
-              <td>
-                <div class="ticket-data">
-                  <div class="ticket-icon">
-                    <img src="./images/icons/ticket-2.svg" alt="">
-                  </div>
-                  <div class="ticket-data__text">
-                    <p>
-                      تذكرة رقم 45.pdf
-                    </p>
-                    <span>9mb . PDF</span>
-                  </div>
-                  <div class="download-icon">
-                    <img src="./images/icons/download.svg" alt="">
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>
-                <div class="user-card">
-                  <div class="user-avatar">
-                    <img src="./images/users/Image-30.png" alt="">
-                  </div>
-                  <div class="user-data">
-                    <h3>احمد محمود</h3>
-                    <span>0123456789</span>
-                  </div>
-                </div>
-              </td>
-              <td>C-103</td>
-              <td>52 </td>
-              <td>
-                سينما مصر , مول العرب , برج الأطنان , سرايا القبة
-              </td>
-              <td>2</td>
-              <td>مرة واحدة</td>
-              <td>
-                <div class="ticket-data">
-                  <div class="ticket-icon">
-                    <img src="./images/icons/ticket-2.svg" alt="">
-                  </div>
-                  <div class="ticket-data__text">
-                    <p>
-                      تذكرة رقم 45.pdf
-                    </p>
-                    <span>9mb . PDF</span>
-                  </div>
-                  <div class="download-icon">
-                    <img src="./images/icons/download.svg" alt="">
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="pagination">
           <div class="pagination-right">
             <span>عرض </span>

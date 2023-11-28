@@ -110,7 +110,7 @@ main>div>* {
 .ticket-header__start {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
 }
 
 .ticket-header__start .back-button {
@@ -407,6 +407,11 @@ main>div>* {
   width: 36px;
 }
 
+.search-buttons button:hover {
+  border-color: #8A74F9;
+  transform: scale(1.2);
+}
+
 .search-end {
   display: flex;
   align-items: center;
@@ -431,6 +436,11 @@ main>div>* {
   color: #fff;
 }
 
+.search-end button:hover {
+  background-color: #fff;
+  color: #8A74F9;
+  border: 1px solid #8A74F9;
+}
 
 .ticket-table {
   background-color: #fff;
@@ -439,13 +449,25 @@ main>div>* {
   padding: 7px 6px;
 }
 
+.table-wrapper {
+  overflow: auto;
+}
+
 .ticket-table table {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
   font-size: 12px;
   font-weight: 400;
+  overflow-x: scroll;
 }
+
+.ticket-table table tr>* {
+  padding: 10px 0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
 
 .ticket-table table tr {
   border-bottom: 1px solid #F3F3F5;
@@ -472,9 +494,13 @@ main>div>* {
   height: 41px;
 }
 
-.ticket-table table tr>* {
-  padding: 10px 0;
-  font-size: 13px;
+.ticket-table .th-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  color: #ABAAB1;
 }
 
 .ticket-table .user-card {
@@ -528,6 +554,32 @@ main>div>* {
 
   ;
 }
+
+td[data-title] {
+  position: relative;
+}
+
+td[data-title]::before,
+td[data-title]::after {
+  --scale: 0;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #1C1C28;
+  transform: translateY(-100%) scale(var(--scale));
+}
+
+td[data-title]::after {
+  color: #fff;
+  content: attr(data-title);
+  padding: 10px;
+  width: max-content;
+}
+
+
 
 .pagination,
 .pagination-right,

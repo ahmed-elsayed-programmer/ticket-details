@@ -92,10 +92,6 @@ main {
   align-items: center;
 }
 
-main>div>* {
-  margin: 15px 0;
-}
-
 .ticket {
   width: calc(100% * 1275 / 1440);
   max-width: 1275px;
@@ -105,6 +101,8 @@ main>div>* {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 75px;
+  margin-bottom: 15px;
 }
 
 .ticket-header__start {
@@ -150,6 +148,8 @@ main>div>* {
 .ticket-details {
   display: flex;
   gap: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .ticket-details .ticket-chart {
@@ -352,6 +352,7 @@ main>div>* {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 
 }
 
@@ -473,6 +474,11 @@ main>div>* {
   border-bottom: 1px solid #F3F3F5;
 }
 
+.ticket-table table tr td:nth-child(3),
+.ticket-table table tr td:nth-child(4) {
+  font-family: 'Inter';
+}
+
 .ticket-table table tr td:first-child {
   color: #7E8299;
 }
@@ -567,7 +573,9 @@ main>div>* {
   visibility: hidden;
   width: max-content;
   background-color: #1E1B39;
-  color: #fff;
+  color: #E5E5EF;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   padding: 5px 15px;
   border-radius: 6px;
@@ -575,17 +583,6 @@ main>div>* {
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-}
-
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

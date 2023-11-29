@@ -32,3 +32,13 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chartdiv"), options);
 chart.render();
+
+
+document.getElementById('copy-btn').addEventListener('click', function () {
+  let text = document.getElementById('copy-text').innerText;
+
+  console.log(text);
+  navigator.clipboard.writeText(text)
+
+  alert('Copied the text: ' + text);
+})

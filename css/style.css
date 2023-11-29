@@ -463,7 +463,7 @@ main>div>* {
 }
 
 .ticket-table table tr>* {
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 13px;
   white-space: nowrap;
 }
@@ -537,13 +537,16 @@ main>div>* {
   border-radius: 8px;
 }
 
+.ticket-table .download-icon {
+  cursor: pointer;
+}
+
 .ticket-data__text {
   text-align: start;
 }
 
 .ticket-data__text p {
   font-size: 12px;
-  font-weight: 500;
   line-height: 150%;
 }
 

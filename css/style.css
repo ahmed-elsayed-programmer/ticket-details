@@ -23,6 +23,25 @@ button {
   cursor: pointer;
 }
 
+.select_box {
+  padding: 5px;
+  min-width: 67px;
+  min-height: 30px;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  background-color: #FAFAFA;
+}
+
+.select_box select {
+  cursor: pointer;
+  text-align: center;
+  appearance: none;
+  background-image: url('../images/icons/arrow-down.svg');
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -76,6 +95,8 @@ input:checked+.slider:before {
   -ms-transform: translateX(14px);
   transform: translateX(14px);
 }
+
+
 
 /* Rounded sliders */
 .slider.round {
@@ -185,15 +206,12 @@ main {
 }
 
 .chart-heading__end select {
-  height: 30px;
-  min-width: 67px;
-  font-size: 12px;
+  height: 100%;
+  width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #FAFAFA;
-  border: 1px solid #E8E8E8;
-  border-radius: 8px;
+
 }
 
 #chartdiv {
@@ -650,19 +668,24 @@ table .tooltip .tooltiptext::after {
   font-weight: 400;
 }
 
-.pagination-right select {
-  display: flex;
-  text-align: center;
+.pagination-right .select_box {
   min-width: 52px;
   height: 32px;
-  direction: ltr;
-  gap: 6px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
+}
+
+.pagination-right select {
+  background: url('../images/icons/Chevron-Down.svg') no-repeat right;
+  padding-right: 9px;
+  text-align: center;
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .pagination-container {
